@@ -137,7 +137,7 @@ h5 {
 .container-tarjeta {
 	background-color: #BFD3D2;
 	text-align: center;
-	padding: 1%;
+	padding: 2%;
 }
 
 .container-banco {
@@ -145,6 +145,7 @@ h5 {
 	width: 60%;
 	margin: auto;
 	border: 2px solid black;
+	font-size: 0.8rem;
 }
 
 /*CONTACTO*/
@@ -221,7 +222,16 @@ h5 {
 
 	/*BACKGROUND*/
 	.container-background {
-		height: 250px;
+		height: 150px;
+	}
+
+	/*NOSOTROS*/
+	.container-nosotros img {
+		width: 75%;
+	}
+
+	.container-nosotros h4 {
+		font-size: 0.8rem;
 	}
 
 	/*CUÁNDO Y DÓNDE*/
@@ -233,5 +243,10 @@ h5 {
 
 	.container-event {
 		width: 90%;
+	}
+
+	iframe {
+		width: 250px;
+		height: 250px;
 	}
 }
