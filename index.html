@@ -12,33 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    
     
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-            posicionarMenu();
-            
-            $(window).scroll(function() {    
-                posicionarMenu();
-            });
-            
-            function posicionarMenu() {
-                var altura_del_header = $('.container-flex').outerHeight(true);
-                var altura_del_menu = $('.navbar').outerHeight(true);
-            
-                if ($(window).scrollTop() >= altura_del_header){
-                    $('.navbar').addClass('fixed');
-                    $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
-                } else {
-                    $('.navbar').removeClass('fixed');
-                    $('.wrapper').css('margin-top', '0');
-                }
-            }
-            
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    
     <title>Germán &amp; Luciana</title>
 </head>
 <body>
@@ -88,13 +69,13 @@
                 <div class="container-event">
                     <h3>Ceremonia religiosa</h3>
                     <img src="img/wed-ceremony.jpg" alt="Imagen ceremonia religiosa">
-                    <h5>Sábado 27 de Marzo, 19.00 PM @ Capilla Santa María Goretti</h5>
+                    <h5>Sábado 27 de Marzo, 17.45 PM | Parroquia Santa María Goretti</h5>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.3518504861677!2d-68.87501568517919!3d-33.02085958089915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0ad089e71bdb%3A0xf685447243805ffd!2sSanta%20Mar%C3%ADa%20Goretti%2C%20Parroquia!5e0!3m2!1ses-419!2sar!4v1611799272312!5m2!1ses-419!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
                 <div class="container-event">
                     <h3>Cena y fiesta</h3>
                     <img src="img/wed-party.jpg" alt="Imagen cena y fiesta">
-                    <h5>Sábado 27 de Marzo, 20.30 PM @ Quinta Fermina</h5>
+                    <h5>Sábado 27 de Marzo, 20.00 PM | Quinta Fermina</h5>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.180887992802!2d-68.85441988517988!3d-32.999006180905496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0b26166a26f7%3A0xab7316585623e406!2sQuinta%20Fermina%20Eventos!5e0!3m2!1ses-419!2sar!4v1611799315057!5m2!1ses-419!2sar" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
@@ -103,10 +84,11 @@
         <div class="container-flex container-info" id="info">
             <h1>Información importante</h1>
             <ul class="listado">
+                <li>Te rogamos puntualidad para asistir a la iglesia💒</li>
                 <li>El uso del barbijo😷 es obligatorio para la ceremonia religiosa. En el salón, tenés que usarlo para trasladarte a las áreas comunes (baño, jardín, barra, etc.) </li>
-                <li>Los livings para cenar cuentan con 6 (seis) lugares por mesa. Podés ubicarte con quien quieras, pero siempre en el mismo sitio🪑 y sin sobrepasar la cantidad.</li>
+                <li>Los livings para cenar cuentan con 6 (seis) lugares por mesa. Podés ubicarte con quien quieras, pero siempre en el mismo sitio📌 y sin sobrepasar la cantidad.</li>
                 <li>¡Podemos bailar!🕺 Respetemos las distancias y los espacios.</li>
-                <li>El salón contará con alcohol en gel en mesas y baños, como así también lugares ventilados y limpieza constante.🧹</li>
+                <li>El salón contará con alcohol en gel en mesas y baños, como así también lugares ventilados y limpieza constante.🧼</li>
                 <li>Te pedimos que en los días previos a la fiesta, te cuides. Si tenés algún síntoma🤒 o sospecha de contagio, no vayas ¡y avisanos! Es responsabilidad de todos que podamos disfrutar sin riesgos.</li>
             </ul>
             <h3>¡Gracias por entender!</h3>
@@ -114,18 +96,20 @@
 
         <div class="container-flex container-tarjeta" id="tarjeta">
             <h1>La tarjeta</h1>
-            <p>El costo de la tarjeta para la cena🍽 es de <b>$2.000 (dos mil pesos)</b>, y para el baile🎉 es de <b>$1.000 (mil pesos)</b> .Todos aquellos que nos confirmen su asistencia nos pueden transferir o dar el dinero en efectivo. A continuación dejamos nuestros datos bancarios:</p>
+            <p>El costo de la tarjeta para la cena🍽 es de <b>$2.000 (dos mil pesos)</b>, y para niños de entre 3 y 10 años, <b>$1.000 (mil pesos)</b>. Para el baile🎉 es de <b>$1.000 (mil pesos)</b>. Todos aquellos que nos confirmen su asistencia nos pueden transferir o dar el dinero en efectivo. A continuación dejamos nuestros datos bancarios:</p>
             <div class="container-banco">
                 <p><b>Nombre completo: </b>Germán Roncelli Salvini</p>
                 <p><b>CBU: </b>1430001713000819500014</p>
                 <p><b>Alias: </b>germanroncelli</p>
             </div>
+            <h6>Tenés tiempo para cancelar tu tarjeta hasta el <b>20 de marzo</b></h6>
         </div>
 
         <div class="container-contacto" id="contacto">
             <h1>Contacto</h1>
             <p>Podés escribirnos para confirmar tu asistencia o por cualquier consulta, a través de nuestro WhatsApp:</p>
-            <a href="wa.link/mac6lv"><i class="fab fa-whatsapp fa-4x"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=542614681465&text=%C2%A1Hola!%20%F0%9F%98%84%20Gracias%20por%20escribirnos%20%C2%BFQuer%C3%A9s%20confirmar%20tu%20asistencia%20al%20evento?"><i class="fab fa-whatsapp fa-4x"></i></a>
+            
         </div>
 
 
